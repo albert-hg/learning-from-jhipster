@@ -28,15 +28,17 @@
   </dependencies>
 
   <build>
+	<!-- 這次加入的內容 -->
     <plugins>
       <plugin>
+		<!-- 使用 plugin -->
         <artifactId>maven-project-info-reports-plugin</artifactId>
         <version>3.0.0</version>
         <executions>
           <execution>
             <id>test showing the execution id.</id>
-            <phase>clean</phase>
-            <goals>
+            <phase>clean</phase>	<!-- 指定在clean的phase執行-->
+            <goals>		<!-- 在指定的phase中執行以下的goasl -->
               <goal>dependency-info</goal>
               <goal>dependencies</goal>
             </goals>
