@@ -1,0 +1,40 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "com.jhipster.tutorial",
+      "nativeLanguage": "en"
+    },
+    "jhipsterVersion": "6.0.0",
+    "applicationType": "monolith",
+    "baseName": "JhipsterTutorial",
+    "packageName": "com.jhipster.tutorial",
+    "packageFolder": "com/jhipster/tutorial",
+    "serverPort": "8080",
+    "authenticationType": "jwt",
+    "cacheProvider": "ehcache",
+    "enableHibernateCache": true,
+    "websocket": "spring-websocket",
+    "databaseType": "sql",
+    "devDatabaseType": "h2Disk",
+    "prodDatabaseType": "postgresql",
+    "searchEngine": "elasticsearch",
+    "messageBroker": false,
+    "serviceDiscoveryType": false,
+    "buildTool": "maven",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "YzAyN2U4MWNmOTkxYTk4MjlmZjhhNGMyMGVhYTk3MzE1NWMxMDBhMmYwNjEwOGZjNmZhYjlkZGFkMDM3ZWQyMjNjMzQ3M2MwZTlmNTJkMGZjNGNlMjMwMDRhMzE5MDNiMzk3NTVkMTU0NzlkNjBkNmMxM2E3Y2EyMGQ0YjcxMjk=",
+    "clientFramework": "angularX",
+    "clientTheme": "none",
+    "clientThemeVariant": "",
+    "useSass": true,
+    "clientPackageManager": "npm",
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [],
+    "enableTranslation": true,
+    "nativeLanguage": "en",
+    "languages": ["en", "zh-tw"]
+  }
+}
