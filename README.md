@@ -1,6 +1,6 @@
 # Learning From JHipster
 
-這是一個學習專欄，會從建立Maven專案開始，然後循序漸進的建立一個管理系統。
+這是一個學習專欄，會從建立Maven專案開始，然後循序漸進的使用Spring Boot建立一個管理系統。
 文章會都放在Medium的平台上： [#learning-from-jhipster](https://medium.com/learning-from-jhipster)
 
 一篇文章一個主題，每個主題會接續前面的主題的程式碼繼續修改，
