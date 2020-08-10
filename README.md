@@ -18,3 +18,4 @@
 | [(3) 使用 Maven Wrapper](https://medium.com/learning-from-jhipster/3-%E4%BD%BF%E7%94%A8-maven-wrapper-f4b7e460278) | [Spring_2_MavenWrapper](https://github.com/alberthyd/learning-from-jhipster/tree/Spring_2_MavenWrapper)| [link](https://github.com/alberthyd/learning-from-jhipster/compare/Spring_1_Maven_BindGoalsToPhase...Spring_2_MavenWrapper) |
 | [(4) Java Web 的歷史淵源](https://medium.com/learning-from-jhipster/4-java-web-%E7%9A%84%E6%AD%B7%E5%8F%B2%E6%B7%B5%E6%BA%90-2e324135c808) | - | - |
 
+| [(5) 建立 Spring Boot 專案](https://medium.com/learning-from-jhipster/5-%E5%BB%BA%E7%AB%8B-spring-boot-%E5%B0%88%E6%A1%88-e7291a050ea1) | [Spring_3_ImportSpringBoot](https://github.com/alberthyd/learning-from-jhipster/tree/Spring_3_ImportSpringBoot)| [link](https://github.com/alberthyd/learning-from-jhipster/compare/Spring_2_MavenWrapper...Spring_3_ImportSpringBoot) |
