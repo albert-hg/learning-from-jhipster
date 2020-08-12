@@ -1,14 +1,14 @@
-package com.albert.management.domain;
+package com.albert.management.dto;
 
-public class Book {
-    private Long id;        // 書本的ID
-    private String name;    // 書本的名稱
-    private Integer remain; // 書本的剩餘數量
+public class ProductDTO {
+    private Long id;        // 產品的ID
+    private String name;    // 產品的名稱
+    private Integer remain; // 產品的剩餘數量
 
-    public Book() {
+    public ProductDTO() {
     }
 
-    public Book(Long id, String name, Integer remain) {
+    public ProductDTO(Long id, String name, Integer remain) {
         this.id = id;
         this.name = name;
         this.remain = remain;
