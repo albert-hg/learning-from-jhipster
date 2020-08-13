@@ -23,11 +23,11 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/products")
-public class ProductResource {
+public class ProductController {
 
     private Map<Long, ProductDTO> products = new HashMap<>();
 
-    public ProductResource() {
+    public ProductController() {
         this.products.put(1L, new ProductDTO(1L, "apple", 10));
         this.products.put(2L, new ProductDTO(2L, "book", 20));
         this.products.put(3L, new ProductDTO(3L, "car", 30));
