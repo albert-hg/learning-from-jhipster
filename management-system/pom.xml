@@ -11,12 +11,12 @@
 
   <!-- 繼承spring-boot-starter的相關配置 -->
   <parent>
-		<groupId>org.springframework.boot</groupId>
-		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>2.3.1.RELEASE</version>
-		<relativePath/>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-parent</artifactId>
+    <version>2.3.1.RELEASE</version>
+    <relativePath />
   </parent>
-  
+
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>1.7</maven.compiler.source>
@@ -30,20 +30,14 @@
       <version>4.11</version>
       <scope>test</scope>
     </dependency>
-
-    <!-- 加入 Spring Boot 的 Dependency -->
     <dependency>
       <groupId>org.springframework.boot</groupId>
-      <artifactId>spring-boot-starter</artifactId>
+      <artifactId>spring-boot-starter-web</artifactId>
     </dependency>
   </dependencies>
 
   <build>
     <!-- 加入 defaultGoal 作為執行 .\mvnw 時的預設 goal -->
     <defaultGoal>spring-boot:run</defaultGoal>
-    <pluginManagement>
-      <!-- 由於已經使用maven wrapper，因此不需要再額外限定生命週期中所使用的plugin版本 -->
-      <plugins/>
-    </pluginManagement>
   </build>
 </project>
