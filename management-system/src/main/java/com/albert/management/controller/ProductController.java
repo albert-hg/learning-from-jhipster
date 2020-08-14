@@ -19,6 +19,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
@@ -61,7 +62,7 @@ public class ProductController {
     }
 
     @GetMapping("/create")
-    public ResponseEntity<ProductDTO> createBook(Long id, String name, Integer remain) {
+    public ResponseEntity<ProductDTO> createBook(@RequestParam Long id, String name, Integer remain) {
         ProductDTO _product = new ProductDTO(id, name, remain);
         if (this.products.containsKey(id)) {
             return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(_product);
