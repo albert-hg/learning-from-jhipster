@@ -52,13 +52,7 @@ public class ProductController {
     @GetMapping("/list2")
     public void getBook(HttpServletResponse response) throws IOException {
         response.setContentType("application/json;charset=UTF-8");
-        try (PrintWriter out = response.getWriter()) {
-            out.print(new ArrayList<ProductDTO>(this.products.values()));
-            out.flush();
-            out.close();
-        } catch (IOException e) {
-            response.sendError(500, e.getMessage());
-        }
+        response.getWriter().print(new ArrayList<ProductDTO>(this.products.values()));
     }
 
     @GetMapping("/create")
