@@ -9,7 +9,6 @@
   <name>management-system</name>
   <url>https://github.com/alberthyd/learning-from-jhipster</url>
 
-  <!-- 繼承spring-boot-starter的相關配置 -->
   <parent>
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-starter-parent</artifactId>
@@ -34,10 +33,15 @@
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-web</artifactId>
     </dependency>
+    <!-- 加入 Swagger 3.0 -->
+    <dependency>
+      <groupId>io.springfox</groupId>
+      <artifactId>springfox-boot-starter</artifactId>
+      <version>3.0.0</version>
+    </dependency>
   </dependencies>
 
   <build>
-    <!-- 加入 defaultGoal 作為執行 .\mvnw 時的預設 goal -->
     <defaultGoal>spring-boot:run</defaultGoal>
   </build>
 </project>

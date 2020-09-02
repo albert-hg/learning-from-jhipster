@@ -1,9 +1,15 @@
 package com.albert.management.dto;
 
+import io.swagger.annotations.ApiModelProperty;
+
 public class ProductDTO {
-    private Long id;        // 產品的ID
-    private String name;    // 產品的名稱
-    private Integer remain; // 產品的剩餘數量
+    
+    @ApiModelProperty(value = "產品的ID", example = "1001", required = true)
+    private Long id;
+    @ApiModelProperty(value = "產品的名稱", example = "apple", required = true)
+    private String name;
+    @ApiModelProperty(value = "產品的剩餘數量")
+    private Integer remain;
 
     public ProductDTO() {
     }
