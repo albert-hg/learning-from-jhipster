@@ -18,8 +18,10 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <maven.compiler.source>1.7</maven.compiler.source>
-    <maven.compiler.target>1.7</maven.compiler.target>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
+    <!-- 擴充項目profile所需的properties -->
+    <profile.extension />  <!-- 初始化 profile.extension 參數的值為空值 -->
   </properties>
 
   <dependencies>
@@ -33,7 +35,6 @@
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-web</artifactId>
     </dependency>
-    <!-- 加入 Swagger 3.0 -->
     <dependency>
       <groupId>io.springfox</groupId>
       <artifactId>springfox-boot-starter</artifactId>
@@ -44,4 +45,30 @@
   <build>
     <defaultGoal>spring-boot:run</defaultGoal>
   </build>
+
+  <!-- 加入dev與prod環境的profile -->
+  <profiles>
+    <profile>
+      <id>dev</id>
+      <properties>
+        <activatedProperties>development${profile.extension}</activatedProperties>
+      </properties>
+      <activation>
+        <activeByDefault>true</activeByDefault>
+      </activation>
+    </profile>
+    <profile>
+      <id>prod</id>
+      <properties>
+        <activatedProperties>production${profile.extension}</activatedProperties>
+      </properties>
+    </profile>
+    <!-- 擴充項目的profile -->
+    <profile>
+      <id>ext</id>
+      <properties>
+        <profile.extension>,extension</profile.extension>
+      </properties>
+    </profile>
+  </profiles>
 </project>
