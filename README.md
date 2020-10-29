@@ -23,6 +23,8 @@
 | [(8) Spring Boot的Properties與Profile](https://medium.com/learning-from-jhipster/8-spring-boot%E7%9A%84properties%E8%88%87profile-8cab3cd06856) | [Spring_6_SpringProperties](https://github.com/albert-hg/learning-from-jhipster/tree/Spring_6_SpringProperties)| [link](https://github.com/albert-hg/learning-from-jhipster/compare/Spring_5_ImportSwagger...Spring_6_SpringProperties) |
 | [(9) Java Logging 的歷史與戰爭](https://medium.com/learning-from-jhipster/9-java-logging-%E7%9A%84%E6%AD%B7%E5%8F%B2%E8%88%87%E6%88%B0%E7%88%AD-e18150540d29) | - | - |
 | [(10) Spring Boot 預設使用的 Logging 探討](https://medium.com/learning-from-jhipster/10-spring-boot-%E9%A0%90%E8%A8%AD%E4%BD%BF%E7%94%A8%E7%9A%84-logging-%E6%8E%A2%E8%A8%8E-8cb7a9738484) | [Spring_7_DefaultLogging](https://github.com/albert-hg/learning-from-jhipster/tree/Spring_7_DefaultLogging)| [link](https://github.com/albert-hg/learning-from-jhipster/compare/Spring_6_SpringProperties...Spring_7_DefaultLogging) |
-| [(11) Spring Boot 使用 Logback 或 Log4j2](https://medium.com/learning-from-jhipster/11-spring-boot-%E4%BD%BF%E7%94%A8-logback-%E6%88%96-log4j2-e655b320a2c8) | [<Spring_8_UsingLogging>](https://github.com/albert-hg/learning-from-jhipster/tree/Spring_8_UsingLogging)| [link](https://github.com/albert-hg/learning-from-jhipster/compare/Spring_7_DefaultLogging...Spring_8_UsingLogging?diff=split) |
+| [(11) Spring Boot 使用 Logback 或 Log4j2](https://medium.com/learning-from-jhipster/11-spring-boot-%E4%BD%BF%E7%94%A8-logback-%E6%88%96-log4j2-e655b320a2c8) | [Spring_8_UsingLogging](https://github.com/albert-hg/learning-from-jhipster/tree/Spring_8_UsingLogging)| [link](https://github.com/albert-hg/learning-from-jhipster/compare/Spring_7_DefaultLogging...Spring_8_UsingLogging?diff=split) |
+
+
 | [<ArticleName>](<link>) | [<BranchName>](<link>)| [link](<compare-link>) |
 
