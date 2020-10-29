@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration>
+
+<!-- <configuration> 的 scan 設定為 true 使配置改變時可以重新載入配置文件 -->
+<configuration scan="true">
+
+    <!-- 引用 Spring Boot 對 Logback 的預設配置 -->
+    <!-- <include resource="org/springframework/boot/logging/logback/base.xml" /> -->
+
+    <!-- 設定印出 console 時的相關設定 -->
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <pattern>%date{HH:mm:ss.sss} %-5level [%thread] %logger{0}: %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <!-- 設定輸出 file 時的相關設定 -->
+    <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+
+        <!-- 透過不同啟動環境，來決定要使用哪一份 springProfile -->
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+
+            <!-- 依照 pom.xml 的 <activatedProperties> 變數決定這裡的 name -->
+            <springProfile name="development">
+                <fileNamePattern>./target/log-dev/logFile.%d{yyyy-MM-dd}.log</fileNamePattern>
+            </springProfile>
+            <springProfile name="production">
+                <fileNamePattern>./target/log-prod/logFile.%d{yyyy-MM-dd}.log</fileNamePattern>
+            </springProfile>
+        </rollingPolicy>
+
+        <!-- 設定寫入 Log File 的格式設定 -->
+        <encoder>
+            <charset>utf-8</charset>
+            <Pattern>%d %-5level [%thread] %logger{0}: %msg%n</Pattern>
+        </encoder>
+    </appender>
+
+    <!-- 透過 AsyncAppender 使 Log 可以以非同步的方式輸出，以增加寫入效能 -->
+    <appender name="ASYNC" class="ch.qos.logback.classic.AsyncAppender">
+        <!-- 修改 queue 的大小，這個執會影響非同步寫入時的效能 -->
+        <queueSize>512</queueSize>
+
+        <!-- 載入名字為 FILE 的 <appender> -->
+        <appender-ref ref="FILE" />
+    </appender>
+
+    <!-- 配置載入位置 -->
+    <root>
+        <!-- 設定 ROOT 的 Log 等級，避免這個值改為 DEBUG，否則會印出許多啟動容器時不必要的資訊 -->
+        <level value="INFO" />
+
+        <!-- 載入名字為 CONSOLE 的 <appender> -->
+        <appender-ref ref="CONSOLE" />
+        <!-- 載入名字為 ASYNC 的 <appender> -->
+        <appender-ref ref="ASYNC" />
+    </root>
+
+    <!-- 設定不同 class 的 Log 印出等級 -->
+    <logger name="com.albert.management" level="debug" />
+</configuration>
