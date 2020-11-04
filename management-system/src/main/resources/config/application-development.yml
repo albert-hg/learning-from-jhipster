@@ -1,6 +1,12 @@
 server:
   port: 8080
 
-logging:
- # 若要使用 log4j2 且要分開不同執行環境時須設定 looging.config
-  config: classpath:log4j2-dev.xml
+spring:
+  devtools:
+    restart:
+      enabled: true
+    livereload:
+      enabled: false
+    remote:
+      restart:
+        enabled: false

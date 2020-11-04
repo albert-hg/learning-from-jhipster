@@ -1,6 +1,2 @@
 server:
   port: 8090
-
-logging:
- # 若要使用 log4j2 且要分開不同執行環境時須設定 looging.config
-  config: classpath:log4j2-prod.xml
