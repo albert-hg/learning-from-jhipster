@@ -24,7 +24,8 @@
 | [(9) Java Logging 的歷史與戰爭](https://medium.com/learning-from-jhipster/9-java-logging-%E7%9A%84%E6%AD%B7%E5%8F%B2%E8%88%87%E6%88%B0%E7%88%AD-e18150540d29) | - | - |
 | [(10) Spring Boot 預設使用的 Logging 探討](https://medium.com/learning-from-jhipster/10-spring-boot-%E9%A0%90%E8%A8%AD%E4%BD%BF%E7%94%A8%E7%9A%84-logging-%E6%8E%A2%E8%A8%8E-8cb7a9738484) | [Spring_7_DefaultLogging](https://github.com/albert-hg/learning-from-jhipster/tree/Spring_7_DefaultLogging)| [link](https://github.com/albert-hg/learning-from-jhipster/compare/Spring_6_SpringProperties...Spring_7_DefaultLogging) |
 | [(11) Spring Boot 使用 Logback 或 Log4j2](https://medium.com/learning-from-jhipster/11-spring-boot-%E4%BD%BF%E7%94%A8-logback-%E6%88%96-log4j2-e655b320a2c8) | [Spring_8_UsingLogging](https://github.com/albert-hg/learning-from-jhipster/tree/Spring_8_UsingLogging)| [link](https://github.com/albert-hg/learning-from-jhipster/compare/Spring_7_DefaultLogging...Spring_8_UsingLogging?diff=split) |
+| [(12) Spring Boot 使用 Devtools](https://medium.com/learning-from-jhipster/12-spring-boot-%E4%BD%BF%E7%94%A8-devtools-ece4df0de531) | [Spring_9_SpringBootDevtools](https://github.com/albert-hg/learning-from-jhipster/tree/Spring_9_SpringBootDevtools)| [link](https://github.com/albert-hg/learning-from-jhipster/compare/Spring_8_UsingLogging...Spring_9_SpringBootDevtools) |
+| [(13) 甚麼是 JDBC、ORM、 JPA、ORM框架、Hibernate](https://medium.com/learning-from-jhipster/13-%E7%94%9A%E9%BA%BC%E6%98%AF-jdbc-orm-jpa-orm%E6%A1%86%E6%9E%B6-hibernate-c762a8c5e112) | - | - |
 
 
 | [<ArticleName>](<link>) | [<BranchName>](<link>)| [link](<compare-link>) |
-
