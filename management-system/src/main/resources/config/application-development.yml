@@ -10,3 +10,7 @@ spring:
     remote:
       restart:
         enabled: false
+  datasource:
+    url: jdbc:h2:file:./target/h2db/db/local;DB_CLOSE_DELAY=-1
+    username: albert
+    password: mypassword
