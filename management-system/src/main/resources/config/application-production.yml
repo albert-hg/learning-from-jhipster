@@ -1,2 +1,10 @@
 server:
   port: 8090
+
+spring:
+  datasource:
+    url: jdbc:postgresql://<ip>:<port>/<databaseName>
+    username: username
+    password: password
+    hikari:
+      auto-commit: false
