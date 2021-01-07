@@ -29,6 +29,6 @@
 | [(14) 深入 JDBC、Connection Pool，並導入 H2 DB](https://medium.com/learning-from-jhipster/14-%E6%B7%B1%E5%85%A5-jdbc-connection-pool-%E4%B8%A6%E5%B0%8E%E5%85%A5-h2-db-939adee9c50) | [Spring_10_ImportH2DB](https://github.com/albert-hg/learning-from-jhipster/tree/Spring_10_ImportH2DB)| [link](https://github.com/albert-hg/learning-from-jhipster/compare/Spring_9_SpringBootDevtools...Spring_10_ImportH2DB) |
 | [(15) Spring Boot 連接至 PostgreSQL 與 HikariCP 的常見使用設定](https://medium.com/learning-from-jhipster/15-spring-boot-%E9%80%A3%E6%8E%A5%E8%87%B3-postgresql-%E8%88%87-hikaricp-%E7%9A%84%E5%B8%B8%E8%A6%8B%E4%BD%BF%E7%94%A8%E8%A8%AD%E5%AE%9A-546bba379c8e) | [Spring_11_ConnectToPostgreSQL](https://github.com/albert-hg/learning-from-jhipster/tree/Spring_11_ConnectToPostgreSQL)| [link](https://github.com/albert-hg/learning-from-jhipster/compare/Spring_10_ImportH2DB...Spring_11_ConnectToPostgreSQL) |
 | [(16) Liquibase，資料庫版本控管工具](https://medium.com/learning-from-jhipster/16-liquibase-%E8%B3%87%E6%96%99%E5%BA%AB%E7%89%88%E6%9C%AC%E6%8E%A7%E7%AE%A1%E5%B7%A5%E5%85%B7-29b40454754a) | - | - |
-
+| [(17) Spring Boot 導入 Liquibase](https://medium.com/learning-from-jhipster/17-spring-boot-%E5%B0%8E%E5%85%A5-liquibase-c00bc6c481db) | [Spring_12_ImportLiquibase](https://github.com/albert-hg/learning-from-jhipster/tree/Spring_12_ImportLiquibase)| [link](https://github.com/albert-hg/learning-from-jhipster/compare/Spring_11_ConnectToPostgreSQL...Spring_12_ImportLiquibase) |
 
 | [<ArticleName>](<link>) | [<BranchName>](<link>)| [link](<compareLink>) |
