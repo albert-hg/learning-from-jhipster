@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.6.xsd">
+
+    <changeSet id="202101081611001" author="albert">
+        <createTable tableName="card">
+            <column name="member_id" type="bigint" autoIncrement="false">
+                <constraints primaryKey="true" nullable="false" />
+            </column>
+            <column name="level" type="int">
+                <constraints nullable="false" />
+            </column>
+        </createTable>
+    </changeSet>
+
+    <changeSet id="202101081611001-1" author="albert">
+        <addForeignKeyConstraint
+            baseColumnNames="member_id"
+            baseTableName="card"
+            constraintName="fk_card_member_id"
+            referencedColumnNames="id"
+            referencedTableName="member" />
+    </changeSet>
+</databaseChangeLog>

@@ -3,4 +3,11 @@
    http://www.liquibase.org/xml/ns/dbchangelog 
    http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd">
 
+   <include file="liquibase/changelog/000000000000000_init.xml" relativeToChangelogFile="false" />
+   <include file="liquibase/changelog/202101081611000_addEntity_Member.xml" relativeToChangelogFile="false" />
+   <include file="liquibase/changelog/202101081611001_addEntity_Card.xml" relativeToChangelogFile="false" />
+   <include file="liquibase/changelog/202101081611002_addEntity_Gym.xml" relativeToChangelogFile="false" />
+   <include file="liquibase/changelog/202101081611003_addJunction_Card_Gym.xml" relativeToChangelogFile="false" />
+   <include file="liquibase/changelog/202101081611004_addEntity_Logging.xml" relativeToChangelogFile="false" />
+
 </databaseChangeLog>

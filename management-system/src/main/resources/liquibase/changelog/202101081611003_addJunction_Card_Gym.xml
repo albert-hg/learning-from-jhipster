@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.6.xsd">
+
+    <changeSet id="202101081611003" author="albert">
+        <createTable tableName="card_gym">
+            <column name="card_id" type="bigint">
+                <constraints nullable="false" />
+            </column>
+            <column name="gym_id" type="bigint">
+                <constraints nullable="false" />
+            </column>
+        </createTable>
+        <addPrimaryKey columnNames="card_id, gym_id" tableName="card_gym" />
+    </changeSet>
+
+    <changeSet id="202101081611003-1" author="albert">
+        <addForeignKeyConstraint
+            baseColumnNames="card_id"
+            baseTableName="card_gym"
+            constraintName="fk_card_gym_card_id"
+            referencedColumnNames="member_id"
+            referencedTableName="card" />
+        <addForeignKeyConstraint
+            baseColumnNames="gym_id"
+            baseTableName="card_gym"
+            constraintName="fk_card_gym_gym_id"
+            referencedColumnNames="id"
+            referencedTableName="gym" />
+    </changeSet>
+</databaseChangeLog>

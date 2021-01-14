@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.6.xsd">
+
+    <changeSet id="202101081611004" author="albert">
+        <createTable tableName="logging">
+            <column name="id" type="bigint" autoIncrement="false">
+                <constraints primaryKey="true" nullable="false" />
+            </column>
+            <column name="enter_datetime" type="datetime">
+                <constraints nullable="false" />
+            </column>
+            <column name="member_id" type="bigint">
+                <constraints nullable="false" />
+            </column>
+            <column name="gym_id" type="bigint">
+                <constraints nullable="false" />
+            </column>
+        </createTable>
+    </changeSet>
+
+    <changeSet id="202101081611004-1" author="albert">
+        <addForeignKeyConstraint
+            baseColumnNames="member_id"
+            baseTableName="logging"
+            constraintName="fk_logging_member_id"
+            referencedColumnNames="id"
+            referencedTableName="member" />
+        <addForeignKeyConstraint
+            baseColumnNames="gym_id"
+            baseTableName="logging"
+            constraintName="fk_logging_gym_id"
+            referencedColumnNames="id"
+            referencedTableName="gym" />
+    </changeSet>
+</databaseChangeLog>

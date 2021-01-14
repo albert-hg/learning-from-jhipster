@@ -1,4 +1,5 @@
 {
     "java.configuration.updateBuildConfiguration": "automatic",
-    "java.server.launchMode": "Hybrid"
+    "java.server.launchMode": "Hybrid",
+    "xml.format.preserveAttributeLineBreaks": true
 }
