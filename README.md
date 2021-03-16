@@ -1,12 +1,13 @@
 # Learning From JHipster
 
-這是一個學習專欄，會從建立Maven專案開始，然後循序漸進的使用Spring Boot建立一個管理系統。
-文章會都放在Medium的平台上： [#learning-from-jhipster](https://medium.com/learning-from-jhipster)
+這是一個Spring Boot的學習專欄，會從最一開始使用Maven建立初始專案開始，接著循序漸進的完成一個管理系統。
+我們將會在這個過程中學習如何使用Spring Boot，並帶領你們熟悉使用Spring Boot開發時常使用到的工具。
 
-一篇文章一個主題，每個主題會接續前面的主題的程式碼繼續修改，
-所以在文章中提到的程式碼都會開branch以方便查看每一次都做了那些修改。
+文章會放在Medium平台上： [#learning-from-jhipster](https://medium.com/learning-from-jhipster)
+一篇文章一個主題，每個主題會接續上一個主題的程式碼繼續進行，
+而在文章中所提到的程式碼都會以新開一個branch的方式更新程式碼，同時也方便查看每一次更新都做了哪些修改。
 
-由於Medium的文章列表的使用體驗滿糟糕的XDD，所以這裡會依照文章的次序排列，並加上文章所對應的branch名稱以及每次修改的內容：
+由於Medium的文章列表的使用體驗沒有非常好，所以這裡會依照文章的次序進行排列，並加上文章所對應的branch名稱以及每次修改的內容：
 
 | Medium Article | Branch Name | Compare |
 | ------ | ------ | ------ |
@@ -32,4 +33,4 @@
 | [(17) Spring Boot 導入 Liquibase](https://medium.com/learning-from-jhipster/17-spring-boot-%E5%B0%8E%E5%85%A5-liquibase-c00bc6c481db) | [Spring_12_ImportLiquibase](https://github.com/albert-hg/learning-from-jhipster/tree/Spring_12_ImportLiquibase)| [link](https://github.com/albert-hg/learning-from-jhipster/compare/Spring_11_ConnectToPostgreSQL...Spring_12_ImportLiquibase) |
 | [(18) 使用 Liquibase 建立所需的 Table 與 ChangeSet 的介紹](https://medium.com/learning-from-jhipster/18-%E9%80%8F%E9%81%8E-liquibase-%E6%93%8D%E4%BD%9C%E8%B3%87%E6%96%99%E5%BA%AB%E4%BB%A5%E5%8F%8A%E5%BB%BA%E7%AB%8B%E6%89%80%E9%9C%80%E7%9A%84-table-changeset%E7%9A%84%E4%BB%8B%E7%B4%B9-fb7120bb2306) | [Spring_13_AddChangeSet](https://github.com/albert-hg/learning-from-jhipster/tree/Spring_13_AddChangeSet)| [link](https://github.com/albert-hg/learning-from-jhipster/compare/Spring_12_ImportLiquibase...Spring_13_AddChangeSet) |
 
-| [ArticleName](link) | [BranchName](link)| [link](compareLink) |
+<!--| [ArticleName](link) | [BranchName](link)| [link](compareLink) |-->
