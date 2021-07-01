@@ -8,3 +8,7 @@ spring:
     password: password
     hikari:
       auto-commit: false
+  jpa:
+    database: POSTGRESQL
+    database-platform: org.hibernate.dialect.PostgreSQL95Dialect
+    show-sql: false
