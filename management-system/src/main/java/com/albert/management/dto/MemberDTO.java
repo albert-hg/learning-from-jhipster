@@ -8,6 +8,8 @@ import javax.persistence.Id;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
+import io.swagger.annotations.ApiModelProperty;
+
 @Entity
 @Table(name = "member")
 public class MemberDTO {
@@ -15,9 +17,11 @@ public class MemberDTO {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "sequence_generator")
     @SequenceGenerator(name = "sequence_generator")
+    @ApiModelProperty(value = "會員ID", example = "1001", required = false)
     private Long id;
 
     @Column(name = "name")
+    @ApiModelProperty(value = "會員名稱", example = "Albert", required = true)
     private String name;
 
 
