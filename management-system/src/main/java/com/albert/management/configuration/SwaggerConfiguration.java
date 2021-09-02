@@ -1,7 +1,9 @@
 package com.albert.management.configuration;
 
+// import com.albert.management.configuration.springfoxPlugin.SwaggerPageable;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.data.domain.Pageable;
 import springfox.documentation.builders.ApiInfoBuilder;
 import springfox.documentation.builders.PathSelectors;
 import springfox.documentation.builders.RequestHandlerSelectors;
@@ -22,7 +24,12 @@ public class SwaggerConfiguration {
       .select()
       .apis(RequestHandlerSelectors.any())
       .paths(PathSelectors.any())
-      .build();
+      .build()
+      .ignoredParameterTypes(Pageable.class)
+      // .directModelSubstitute(Pageable.class, SwaggerPageable.class)
+      // ↑
+      // 你可以使用重新定義SwaggerPageable的方式來測試看看文章中所述的效果，但要記得要把PageableParameterPlugin的Configuration給關閉。
+      ;
   }
 
   private ApiInfo apiInfo() {
